@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="ColorGame.css">
+</head>
+<body>
+
+	<h1>The Great 
+		<br>
+		<span id="ColorDisplay">RGB</span> 
+		<br>
+		Color Game
+	</h1>
+
+	<div id="stripe">
+		<button id="reset">New Colors</button>
+		<span id="message"></span>
+		<button class="mode selected">Easy</button>
+		<button class="mode">Medium</button>
+		<button class="mode">Hard</button>
+		<button id="help">Help</button>
+	</div>
+
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>	
+	</div>
+
+	<div class="instructions visible">
+		<div id="howTo">How to Play</div>
+			<div id="detailHowTo">
+				<ol>
+					<li>Select your difficulty!</li>
+					<br>
+					<li>Match the RGB code to the corresponding colored square!</li>
+				</ol>
+				<ul> Hints:
+					<li>RBG(Red, Blue, Green)</li>
+					<li>Keep Playing and you'll get the hang of it ;)</li>
+				</ul>
+			</div>
+	</div>
+
+	<script type="text/javascript" src="ColorGame.js"></script>
+</body>
+</html>
